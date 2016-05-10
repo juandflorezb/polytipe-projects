@@ -39,11 +39,15 @@
 
 <body unresolved class="fullbleed">
   <paper-drawer-panel id="drawer_panel" disable-swipe force-narrow>
-    <paper-header-panel drawer mode="seamed">
-      <div id="drawer_content"></div>
+    <paper-header-panel mode="seamed" drawer="" at-top="">
+      <div id="drawer_content" style="border: medium none;"></div>
     </paper-header-panel>
-    <paper-header-panel main mode="seamed">
-      <iron-pages id="app_content" attr-for-selected="id"></iron-pages>
+    <paper-header-panel mode="seamed" main="" at-top="">
+      <iron-pages attr-for-selected="id" id="app_content">
+        <section id="Login">
+          <poly-label text="User" size="18" link="" id="poly4" style="background-color: rgb(3, 155, 229); color: rgb(255, 235, 238);"></poly-label>
+        </section>
+      </iron-pages>
     </paper-header-panel>
   </paper-drawer-panel>
 
